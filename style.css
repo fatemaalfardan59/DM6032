@@ -1,55 +1,115 @@
-/* Reset default spacing */
+/* Reset basic spacing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Make the background soft and easy on the eyes */
+/* Body styling */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #f8f9fa, #e8f0fe);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffe4f3, #cce6ff);
   color: #333;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-/* Center all headers and give them a cute look */
-h1, h2, h3 {
   text-align: center;
-  color: #3b5998;
-  margin-bottom: 15px;
+  padding: 30px;
 }
 
-/* Style your buttons nicely */
-button {
-  background-color: #3b5998;
+/* Header */
+header h1 {
+  color: #ff66b2;
+  text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+  color: #555;
+  font-size: 1.1em;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  padding: 10px;
+  width: 70%;
+  margin: 10px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation bar */
+nav ul {
+  list-style: none;
+  background: #ffb6c1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  border-radius: 30px;
+  margin: 25px auto;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5);
+}
+
+nav a {
+  text-decoration: none;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
+  font-weight: bold;
   transition: 0.3s;
 }
 
-button:hover {
-  background-color: #5a78d1;
-  transform: scale(1.05);
+nav a:hover {
+  color: #ffe4f3;
+  transform: scale(1.1);
 }
 
-/* Give your images a smooth rounded look */
-img {
-  max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* Section titles */
+h2 {
+  color: #5c8ef5;
+  margin: 20px 0 10px;
+  text-shadow: 1px 1px 3px rgba(92, 142, 245, 0.4);
 }
 
-/* Add a soft shadow to sections or boxes */
-section, div {
-  background: white;
-  border-radius: 15px;
-  padding: 20px;
+/* Table styling */
+table {
   margin: 20px auto;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-collapse: collapse;
+  width: 70%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #ffb6c1;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: #f8f8f8;
+}
+
+/* Video iframe */
+iframe {
+  border-radius: 15px;
+  margin-top: 15px;
   width: 80%;
+  max-width: 600px;
+  height: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background: #ff66b2;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 102, 178, 0.4);
 }
