@@ -69,7 +69,36 @@
         <p> yaaaayyyyy im doonneeeeeeeeeee that amazingggg yallah bye </p>
       </footer>
       
-       &lt; section id =" contact "&gt;
-<h2>contact me</h2>&lt; form id =" contactform "&gt; &lt; lable &gt; name &lt; br &gt; &lt; input type =" text " id =" name " required /&gt; &lt;/ lable &gt;&lt; br &gt;&lt; br &gt; &lt; label &gt; email &lt; br &gt; &lt; input type =" email " id =" email " required /&gt; &lt;/ label &gt;&lt; br &gt;&lt; br &gt; &lt; label &gt; write your inquires &lt; br &gt; &lt; textarea id =" massage " row ="6" cols ="150" required &gt;&lt;/ textarea &gt;&lt;/ label &gt;&lt; br &gt;&lt; br &gt; &lt; buttion type =" submit "&gt; submit &lt;/ button &gt; &lt;/ form &gt; &lt;/ section &gt;
+    <body>
+
+    <form action="/submit-form" method="post">
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="user_name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="user_email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="user_message" rows="4" cols="50"></textarea><br><br>
+
+            <input type="checkbox" id="newsletter" name="subscribe_newsletter" value="yes">
+            <label for="newsletter">Subscribe to newsletter</label><br><br>
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="user_country">
+                <option value="usa">United States</option>
+                <option value="can">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <input type="submit" value="Send Message">
+        </fieldset>
+    </form>
+
+</body>
         
 </html>
